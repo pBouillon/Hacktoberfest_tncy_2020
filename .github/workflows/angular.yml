@@ -1,0 +1,30 @@
+name: Angular CI
+
+on: [push]
+
+jobs:
+    build: 
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+        
+            - name: Use Node.js 14.x
+              uses: actions/setup-node@v1
+              with:
+                node-version: 14.x
+        
+            - name: Setup Node
+              run: |
+                cd ./hacktoberfest-tncy/
+                npm install
+                npm update
+
+            - name: Setup Angular
+              run: |
+                npm install @angular/cli
+                npm install @angular-devkit/schematics
+         
+            - name: Build project   
+              run: |
+                npm run --prefix hacktoberfest-tncy/ build:ci
