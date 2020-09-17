@@ -27,4 +27,4 @@ jobs:
          
             - name: Build project   
               run: |
-                npm run --prefix hacktoberfest-tncy/ build:ci
+                npm run --prefix hacktoberfest-tncy/ build
