@@ -24,4 +24,15 @@ export class Event {
      * @summary Organizer of the event
      */
     by: string;
+
+    /**
+     * @summary Location in which the event take place
+     */
+    in: string;
+
+    /**
+     * @summary Short description of this event
+     */
+    summary: string;
+
 }

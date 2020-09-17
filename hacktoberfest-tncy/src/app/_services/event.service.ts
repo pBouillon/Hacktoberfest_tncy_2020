@@ -16,7 +16,7 @@ export class EventService {
   /**
    * @summary List of all planned events
    */
-  private events: Array<Event>;
+  private events: Array<Event> = [];
 
   /**
    * Create a new instance, initialize `events` on creation 

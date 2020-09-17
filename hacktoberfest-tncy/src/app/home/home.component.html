@@ -1,4 +1,7 @@
-<div *ngFor="let event of eventService.getCurrentEvents()">
-    <p>{{ event.name }}</p>
+<div class="card-deck my-2">
+    <div class="container d-flex justify-content-center"
+        *ngFor="let event of eventService.getCurrentEvents()">
+        <app-event-view class="my-2 w-75" 
+            [event]="event"></app-event-view>
+    </div>
 </div>
-
