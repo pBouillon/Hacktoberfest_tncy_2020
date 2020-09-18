@@ -20,5 +20,19 @@
         "by": "Pierre Bouillon",
         "in": "Amphi Sud",
         "summary": "Rapide introduction à l'Open-Source, pour débutants et curieux"
+    }, {
+        "name": "Introduction à la stéganographie",
+        "at": 1602608400,
+        "for": 1200,
+        "by": "Yann Meyer",
+        "in": "Amphi Sud",
+        "summary": ""
+    }, {
+        "name": "Un modèle de développement web : Les PWAs",
+        "at": 1602610200,
+        "for": 1200,
+        "by": "Antoine Jacque",
+        "in": "Amphi Sud",
+        "summary": "Un nouveau moyen de développer une application web poussé par Google. Il permet de combler une partie du fossé séparant les applications natives et web. Les progressives web app allient la réactivité des applications natives et l'accessibilité des applications Web."
     }
 ]
