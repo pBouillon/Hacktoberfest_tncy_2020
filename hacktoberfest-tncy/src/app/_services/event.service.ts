@@ -3,6 +3,10 @@ import { Injectable } from '@angular/core';
 
 import { Event } from '../_models/event';
 
+/**
+ * @summary Service to process and handle Event objects
+ * @see Event
+ */
 @Injectable({
   providedIn: 'root'
 })

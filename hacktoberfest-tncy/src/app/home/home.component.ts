@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { EventService } from '../_services/event.service';
 
 @Component({
@@ -6,10 +6,8 @@ import { EventService } from '../_services/event.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
   constructor(public eventService: EventService) { }
-
-  ngOnInit(): void { }
 
 }
