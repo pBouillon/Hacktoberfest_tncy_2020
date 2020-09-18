@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EventService } from '../_services/event.service';
 
 @Component({
   selector: 'app-planning',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlanningComponent implements OnInit {
 
-  constructor() { }
+  constructor(public eventService: EventService) { }
 
   ngOnInit(): void {
   }

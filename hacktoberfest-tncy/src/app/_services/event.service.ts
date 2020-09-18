@@ -43,8 +43,7 @@ export class EventService {
             (event: Event) => event.at + event.for < currentTimestamp);
 
           // Sorting them by starting time
-          this.events.sort(
-            (a: Event, b: Event) => a.at <= b.at ? -1 : 1);
+          this.events = this.sortEventsByBeginningTime(this.events);
         },
         (error) => {
           console.log('Unable to load events:', error);
@@ -54,10 +53,47 @@ export class EventService {
 
   /**
    * @summary Get a number of current or upcoming events
-   * @param take Number of events to fetch (default is 3)
+   * @param take Number of events to fetch (default is 2)
    */
-  public getCurrentEvents(take: number = 3): Array<Event> {
+  public getCurrentEvents(take: number = 2): Array<Event> {
     return this.events.slice(0, take);
+  }
+
+  /**
+   * @summary Get a collection of all events per room, ordered chronologically 
+   */
+  public getOrderedEventsPerRoom(): Map<string, Array<Event>> {
+    const eventsFor = new Map<string, Array<Event>>();
+
+    // Iterate over all events
+    this.events.map((event: Event) => {
+      // Adding the entry if this room is unknown so far
+      if (! eventsFor.has(event.in)) {
+        eventsFor.set(event.in, []);
+      }
+
+      // Append the new event to all the planned one for this room
+      let newEventPlanning = eventsFor.get(event.in);
+      newEventPlanning.push(event);
+
+      // Replace the old planning by the new one
+      eventsFor.set(event.in, newEventPlanning);
+    });
+
+    // Ordering all events of the room
+    eventsFor.forEach(
+      (value: Array<Event>, key: string, map: Map<string, Array<Event>>) => {
+        map.set(key, this.sortEventsByBeginningTime(value));
+    });
+
+    return eventsFor;
+  }
+
+  private sortEventsByBeginningTime(events: Array<Event>): Array<Event> {
+    this.events.sort(
+      (a: Event, b: Event) => a.at <= b.at ? -1 : 1);
+
+    return events;
   }
 
 }

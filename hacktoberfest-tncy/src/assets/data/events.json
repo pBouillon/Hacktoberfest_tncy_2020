@@ -6,61 +6,19 @@
         "by": "Pierre Bouillon",
         "in": "Salle P.I.",
         "summary": "Espace réservé pour le développement, organisation libre !"
-    },
-    {
+    }, {
         "name": "Accueil",
         "at": 1602606600,
         "for": 900,
         "by": "Pierre Bouillon",
         "in": "Amphi Sud",
         "summary": "Accueil et lancement de l'événement"
-    },
-    {
+    }, {
         "name": "Introduction à l'Open-Source",
         "at": 1602607500,
         "for": 900,
         "by": "Pierre Bouillon",
         "in": "Amphi Sud",
         "summary": "Rapide introduction à l'Open-Source, pour débutants et curieux"
-    },
-    {
-        "name": "Lorem ipsum",
-        "at": 1602607600,
-        "for": 900,
-        "by": "John Doe",
-        "in": "Amphi Sud",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
-    },
-    {
-        "name": "Lorem ipsum",
-        "at": 1602607600,
-        "for": 900,
-        "by": "John Doe",
-        "in": "Amphi Sud",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
-    },
-    {
-        "name": "Lorem ipsum",
-        "at": 1602607600,
-        "for": 900,
-        "by": "John Doe",
-        "in": "Amphi Sud",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
-    },
-    {
-        "name": "Lorem ipsum",
-        "at": 1602607600,
-        "for": 900,
-        "by": "John Doe",
-        "in": "Amphi Sud",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
-    },
-    {
-        "name": "Lorem ipsum",
-        "at": 1602607600,
-        "for": 900,
-        "by": "John Doe",
-        "in": "Amphi Sud",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
     }
 ]
