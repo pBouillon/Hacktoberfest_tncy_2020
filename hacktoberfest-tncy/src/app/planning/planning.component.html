@@ -1,1 +1,17 @@
-<p>planning works!</p>
+<div class="container"
+    *ngFor="let planningFor of eventService.getOrderedEventsPerRoom() | keyvalue">
+
+    <h3>&lt;{{ planningFor.key }}/&gt;</h3>
+
+    <div class="card-deck my-2">
+
+        <div class="container d-flex justify-content-center"
+            *ngFor="let event of planningFor.value">
+
+            <app-event-view class="my-2 w-75" 
+                [event]="event"></app-event-view>
+
+        </div>
+
+    </div>
+</div>
