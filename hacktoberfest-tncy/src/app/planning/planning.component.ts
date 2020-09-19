@@ -6,11 +6,8 @@ import { EventService } from '../_services/event.service';
   templateUrl: './planning.component.html',
   styleUrls: ['./planning.component.css']
 })
-export class PlanningComponent implements OnInit {
+export class PlanningComponent {
 
   constructor(public eventService: EventService) { }
-
-  ngOnInit(): void {
-  }
 
 }
