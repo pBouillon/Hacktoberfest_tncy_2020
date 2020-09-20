@@ -1,0 +1,22 @@
+h2 {
+    font-size: 20px;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  h2 {
+      font-size: 30px;
+  }
+}
+
+
+h3 {
+    font-size: 20px;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  h3 {
+      font-size: 30px;
+  }
+}
