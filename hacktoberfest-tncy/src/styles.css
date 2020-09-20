@@ -6,7 +6,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+th {
     color: white;
 }
     
@@ -16,7 +17,8 @@ h6,
 p,
 span,
 div,
-a {
+a,
+td {
     color: rgb(147, 194, 219);
 }
 
