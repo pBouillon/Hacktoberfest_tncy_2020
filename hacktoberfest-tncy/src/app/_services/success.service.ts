@@ -39,6 +39,9 @@ export class SuccessService {
       );
   }
 
+  /**
+   * @summary Get all successes
+   */
   get successes(): Array<Success> {
     return this._successes;
   }
