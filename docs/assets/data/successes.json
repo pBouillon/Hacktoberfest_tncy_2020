@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Pionnier",
+        "summary": "A créé avec succès sa première pull request",
+        "winner": ""
+    },
+    {
+        "name": "MacGyver",
+        "summary": "A triomphé de toutes les épreuves de la Hacktoberfest",
+        "winner": ""
+    },
+    {
+        "name": "Barry Allen",
+        "summary": "A créé le plus de pull requests",
+        "winner": ""
+    },
+    {
+        "name": "Maintainer expert",
+        "summary": "A mergé le plus de pull requests",
+        "winner": ""
+    }
+]

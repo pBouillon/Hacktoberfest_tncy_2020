@@ -15,35 +15,35 @@ export class EventService {
   /**
    * @summary Path to the JSON file containing all events
    */
-  private eventsSourcePath = 'assets/data/events.json';
+  private _eventsSourcePath = 'assets/data/events.json';
 
   /**
    * @summary List of all planned events
    */
-  private events: Array<Event> = [];
+  private _events: Array<Event> = [];
 
   /**
-   * Create a new instance, initialize `events` on creation 
-   * @param http HttpClient used for JSON handling
+   * Create a new instance, initialize `_events` on creation 
+   * @param _http HttpClient used for JSON handling
    */
-  constructor(private http: HttpClient) { 
+  constructor(private _http: HttpClient) { 
     // Retrieve current timestamp in seconds
     const currentTimestamp = Math.floor(Date.now() / 1000);
     
     // Retrieve events
-    this.http
-      .get(this.eventsSourcePath)
+    this._http
+      .get(this._eventsSourcePath)
       .subscribe(
         (data) => {
           // Deserializing events
-          this.events = data as Array<Event>;
+          this._events = data as Array<Event>;
 
           // Skip all past events
-          this.events.filter(
+          this._events.filter(
             (event: Event) => event.at + event.for < currentTimestamp);
 
           // Sorting them by starting time
-          this.events = this.sortEventsByBeginningTime(this.events);
+          this._events = this.sortEventsByBeginningTime(this._events);
         },
         (error) => {
           console.log('Unable to load events:', error);
@@ -56,7 +56,7 @@ export class EventService {
    * @param take Number of events to fetch (default is 2)
    */
   public getCurrentEvents(take: number = 2): Array<Event> {
-    return this.events.slice(0, take);
+    return this._events.slice(0, take);
   }
 
   /**
@@ -66,7 +66,7 @@ export class EventService {
     const eventsFor = new Map<string, Array<Event>>();
 
     // Iterate over all events
-    this.events.map((event: Event) => {
+    this._events.map((event: Event) => {
       // Adding the entry if this room is unknown so far
       if (! eventsFor.has(event.in)) {
         eventsFor.set(event.in, []);
@@ -89,8 +89,12 @@ export class EventService {
     return eventsFor;
   }
 
+  /**
+   * @summary Sort an array of events by their beginning date
+   * @param events Event array to be sorted
+   */
   private sortEventsByBeginningTime(events: Array<Event>): Array<Event> {
-    this.events.sort(
+    this._events.sort(
       (a: Event, b: Event) => a.at <= b.at ? -1 : 1);
 
     return events;

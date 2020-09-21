@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { SuccessService } from '../_services/success.service';
 
 @Component({
   selector: 'app-leaderboard',
   templateUrl: './leaderboard.component.html',
   styleUrls: ['./leaderboard.component.css']
 })
-export class LeaderboardComponent implements OnInit {
+export class LeaderboardComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  constructor(public successService: SuccessService) { }
 
 }
