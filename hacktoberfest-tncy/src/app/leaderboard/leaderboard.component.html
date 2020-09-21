@@ -9,13 +9,21 @@
             <th scope="col">Vainqueur</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody *ngFor="let success of successService.successes"
+            class="my-2">
             <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
+                <th scope="row">{{ success.name }}</th>
+                
+                <td>{{ success.summary }}</td>
+
+                <td *ngIf="success.winner; else noCurrentWinner"
+                    class="text-center">{{ success.winner }}
+                </td>
+                
+                <ng-template #noCurrentWinner>
+                    <td class="text-secondary text-center">Vous ?</td>
+                </ng-template>
             </tr>
-            <tr>
         </tbody>
     </table>
 </div>
