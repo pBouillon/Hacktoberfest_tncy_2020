@@ -1,3 +1,7 @@
 tbody:hover {
     background-color: rgb(58, 96, 117);
 }
+
+a {
+    text-decoration: underline;
+}

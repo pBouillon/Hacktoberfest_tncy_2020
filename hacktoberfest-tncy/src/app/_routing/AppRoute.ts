@@ -11,7 +11,7 @@ export enum AppRoute {
     /**
      * @summary Score board and ranking
      */
-    Leaderboard = "classement",
+    Leaderboard = "succès",
 
     /**
      * @summary Global planning
