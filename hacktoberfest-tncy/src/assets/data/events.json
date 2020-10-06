@@ -1,36 +1,67 @@
 [
     {
-        "name": "Développement libre",
-        "at": 1602607500,
-        "for": 15300,
-        "by": "l'équipe de la Hacktoberfest et TELECOM Nancy",
+        "name": "Hacktivité #1",
+        "at": 1602609900,
+        "for": 1200,
+        "by": "L'équipe de la Hacktoberfest et TELECOM Nancy",
         "in": "Salle P.I.",
-        "summary": "Espace réservé pour le développement, organisation libre !"
+        "summary": "Première des trois activités de la mini-compétition de la Hacktoberfest"
     }, {
+        "name": "Hacktivité #2",
+        "at": 1602615600,
+        "for": 900,
+        "by": "L'équipe de la Hacktoberfest et TELECOM Nancy",
+        "in": "Salle P.I.",
+        "summary": "Deuxième des trois activités de la mini-compétition de la Hacktoberfest"
+    }, {
+        "name": "Hacktivité #3",
+        "at": 1602619200,
+        "for": 900,
+        "by": "L'équipe de la Hacktoberfest et TELECOM Nancy",
+        "in": "Salle P.I.",
+        "summary": "Troisième des trois activités de la mini-compétition de la Hacktoberfest"
+    }, {
+        "name": "Remise des prix de la mini-compétition",
+        "at": 1602621000,
+        "for": 1200,
+        "by": "L'équipe de la Hacktoberfest et TELECOM Nancy",
+        "in": "Salle P.I.",
+        "summary": "Annonce du podium et remise des prix pour les vainqueurs !"
+    },
+    
+    
+    {
         "name": "Accueil",
         "at": 1602606600,
+        "for": 900,
+        "by": "Pierre Bouillon",
+        "in": "Amphi Sud",
+        "summary": "Accueil des participants, installation"
+    }, {
+        "name": "Ouverture de l'événement",
+        "at": 1602607500,
         "for": 900,
         "by": "Pierre Bouillon",
         "in": "Amphi Sud",
         "summary": "Accueil, présentation et lancement de l'événement"
     }, {
         "name": "Introduction à l'Open-Source",
-        "at": 1602607500,
-        "for": 900,
+        "at": 1602609300,
+        "for": 650,
         "by": "Pierre Bouillon",
         "in": "Amphi Sud",
         "summary": "Rapide introduction à l'Open-Source, pour débutants et curieux: créer sa première pull request, préparer un projet aux participations, etc."
     }, {
         "name": "Introduction à la stéganographie",
-        "at": 1602608400,
+        "at": 1602611100,
         "for": 1200,
         "by": "Yann Meyer",
         "in": "Amphi Sud",
         "summary": "Au travers d'un exemple pédagogique et d'une application réelle, venez découvrir l'art de la dissimulation d'information dans des fichiers informatiques."
     }, {
         "name": "Un modèle de développement web : Les PWAs",
-        "at": 1602610200,
-        "for": 1200,
+        "at": 1602613200,
+        "for": 900,
         "by": "Antoine Jacque",
         "in": "Amphi Sud",
         "summary": "Approche novatrice du développement d'applications web, les PWAs comblent le fossé entre le web et le natif. Alliant la réactivité du natif et l'accessibilité des Web App elles peuvent être le futur de l'expérience utilisateur."

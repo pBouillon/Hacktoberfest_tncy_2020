@@ -53,9 +53,9 @@ export class EventService {
 
   /**
    * @summary Get a number of current or upcoming events
-   * @param take Number of events to fetch (default is 2)
+   * @param take Number of events to fetch (default is 3)
    */
-  public getCurrentEvents(take: number = 2): Array<Event> {
+  public getCurrentEvents(take: number = 3): Array<Event> {
     return this._events.slice(0, take);
   }
 
@@ -94,10 +94,8 @@ export class EventService {
    * @param events Event array to be sorted
    */
   private sortEventsByBeginningTime(events: Array<Event>): Array<Event> {
-    this._events.sort(
-      (a: Event, b: Event) => a.at <= b.at ? -1 : 1);
-
-    return events;
+    return events.sort((a: Event, b: Event) => 
+      a.at <= b.at ? -1 : 1);
   }
 
 }
